@@ -6,11 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.jayway.klab.rxandroidlab.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
+import rx.Observable;
 
 /**
  * A login screen that offers login via email/password.
@@ -62,7 +65,11 @@ public class SignUpActivity extends AppCompatActivity {
 
             If they go from valid to invalid, the button should go back to a disabled state.
          */
+    }
 
+    @OnClick(R.id.signup_button)
+    public void signUp() {
+        Toast.makeText(this, "You signed up! Congratulations!", Toast.LENGTH_LONG).show();
     }
 }
 
