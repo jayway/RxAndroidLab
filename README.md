@@ -12,7 +12,17 @@ Exercise for K-dag, December 2015
   Rx-related Android projects.
 * [RetroLambda](https://github.com/evant/gradle-retrolambda) - You really want to use lambdas
   when writing a lot of Rx code.
-  
+
+## Prerequisites
+
+To do the labs, you need:
+
+* Android Studio 1.4 or 1.5 (haven't tried it with earlier versions). Or any development
+  environment for Android that can build things with gradle.
+
+* Java 8. You can do the exercises without java 8, but you need to modify the gradle build files
+  and remove retrolambda. And Rx without Retrolambda is like a keyboard without space.
+
 ## Exercises
 
 There are three exercises described here. One that is pure RxJava and two that focuses on
