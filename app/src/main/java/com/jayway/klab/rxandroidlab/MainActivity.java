@@ -24,5 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
         RxView.clicks(findViewById(R.id.register_button))
                 .subscribe(aVoid -> startActivity(new Intent(this, SignUpActivity.class)));
+
+        RxView.clicks(findViewById(R.id.demo_button))
+                .subscribe(aVOid -> startActivity(new Intent(this, DemoActivity.class)));
     }
+
 }

@@ -10,29 +10,39 @@
     tools:context="com.jayway.klab.rxandroidlab.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
+        style="@android:style/TextAppearance.Holo.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        style="@android:style/TextAppearance.Holo.Large"
-        android:text="Select a Lab!"
-        android:id="@+id/textView" />
+        android:text="Select a Lab!" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Album Search"
-        android:id="@+id/searchlab_button"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/register_button"
-        android:layout_alignStart="@+id/register_button"
-        android:layout_alignRight="@+id/register_button"
-        android:layout_alignEnd="@+id/register_button" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register Screen"
         android:id="@+id/register_button"
-        android:layout_above="@+id/searchlab_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView"
+        android:text="Register Screen" />
+
+    <Button
+        android:id="@+id/searchlab_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/register_button"
+        android:layout_alignLeft="@+id/register_button"
+        android:layout_alignRight="@+id/register_button"
+        android:layout_alignStart="@+id/register_button"
+        android:layout_below="@id/register_button"
+        android:text="Album Search" />
+
+
+    <Button
+        android:id="@+id/demo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchlab_button"
+        android:layout_centerHorizontal="true"
+        android:text="Demo" />
+
 </RelativeLayout>
